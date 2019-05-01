@@ -21,11 +21,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YVL-Mu-3la">
                                 <rect key="frame" x="16" y="423" width="382" height="390"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-dd-2G6">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-dd-2G6">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="216"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578420496.73785901">
                                             <!--2019-05-01 16:21:36 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="datePickerValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AQK-HG-GXX"/>
+                                        </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-7M-4vK">
                                         <rect key="frame" x="0.0" y="224" width="382" height="66"/>
@@ -60,6 +63,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="5Xt-dd-2G6" id="fPN-Pn-xX2"/>
+                        <outlet property="resetButton" destination="8xO-fa-xj6" id="KFW-PB-eLg"/>
+                        <outlet property="timeButton" destination="HlR-rn-EXN" id="vam-gg-B7f"/>
+                        <outlet property="timeLabel" destination="qQc-7M-4vK" id="6p8-8I-aTH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
