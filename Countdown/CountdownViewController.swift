@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CountdownViewController.swift
 //  Countdown
 //
 //  Created by Victor  on 5/1/19.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CountdownViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    
 }
+
 
